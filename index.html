@@ -5,32 +5,54 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 	<title>Game Score Counter</title>
 	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico"/>
+	<link rel="stylesheet" href="style.css" />
+	<link href='https://fonts.googleapis.com/css?family=Autour One' rel='stylesheet'>
+	<link href='https://fonts.googleapis.com/css?family=Black Han Sans' rel='stylesheet'>
 </head>
 <body>
 	<div id='header'>
-		<img src='logo.png'>
+		<img id='logo' src='logo.png'>
 	</div>
 
-	<div id='AddPersonForm'>
-		<form>
-			<div id='Players'>
-			</div>
-			<label for='AddPlayer'>Add a Player</label>
-			<input type='text' id='AddPlayer'/>
-			<input type='submit' value='Start Game'>
-		</form>
+	<div id='main'>
+		<div id='Players'>
+			<table id='PlayerTable'>
+				<tr id='PlayerTableLabels'>
+					<td>Player</td>
+					<td>Add or Subtract Score</td>
+					<td>Total Score</td>
+				</tr>
+				<tr>
+					<td>Leeroy Jenkins</td>
+					<td><input class='ChangeScore' type='number'><button class='ChangeScoreButton'>Go</button></td>
+					<td>10</td>
+				</tr>
+				<tr>
+					<td>Nathan Yoder</td>
+					<td><input class='ChangeScore' type='number'><button class='ChangeScoreButton'>Go</button></td>
+					<td>30</td>
+				</tr>
+			</table>
+			<button class='SillyButton'>End Game</button>
+		</div>
+		<div id='AddPersonForm'>
+			<p id='addPlayerText'>Add a Player</p>
+			<input type='text' id='AddPlayerInput'/>
+			<button id='AddPlayerButton'>Add Player</button>
+			<br><br>
+			<button class='SillyButton'>Start Game</button>
+		</div>
+	
+		<div id='AddScoreForm'>
+		</div>
+	
+		<div id='GameOver'>
+			<p id='TheWinnerIs'>The winner is</p>
+			<p id='Winner'>Leeroy Jenkins</p>
+			<p class='NotWinner'>2. Nathan Yoder</p>
+		</div>
 	</div>
-
-	<div id='AddScoreForm'>
-	</div>
-
-	<div id='GameOver'>
-		<p>The winner is </p>
-		<ul>
-			<li>2nd Place: </li>
-		</ul>
-	</div>
-
+	
 	<div id='TechStack'>
 		<table>
 		</table>
