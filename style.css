@@ -1,6 +1,7 @@
 body {
 	font-family: Noto Sans,Arial,sans-serif;
   	margin: 0px;
+  	background-color: #e4f9ff;
   	}
 #header {
 	background-color: #12cad6;
@@ -46,6 +47,9 @@ body {
 .ChangeScoreButton:hover {
 	background-color: #ff9999;
 }
+#AddPersonForm {
+	padding-top: 50px;
+}
 #addPlayerText {
 	margin-top: 0px;
 	font-size: 30px;
@@ -67,6 +71,12 @@ body {
 }
 #AddPlayerButton:hover {
 	background-color: #ac00e6;
+}
+#playerList {
+	padding-top: 15px;
+	padding-left: 40%;
+	text-align: left;
+	font-size: 20px;
 }
 #Players {
 	padding-top: 20px;
